@@ -1,0 +1,46 @@
+plugins {
+id 'org.springframework.boot' version '2.6.4'
+id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+id 'java'
+id 'org.sonarqube' version '3.2.0'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+mavenCentral()
+}
+
+dependencies {
+testImplementation 'org.springframework.boot:spring-boot-starter-test'
+implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+implementation 'org.springframework.boot:spring-boot-starter-web'
+compileOnly 'org.projectlombok:lombok'
+runtimeOnly 'org.postgresql:postgresql'
+annotationProcessor 'org.projectlombok:lombok'
+testImplementation 'org.springframework.boot:spring-boot-starter-test'
+// https://mvnrepository.com/artifact/javax.validation/validation-api
+implementation group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
+// https://mvnrepository.com/artifact/javax.validation/validation-api
+implementation 'javax.validation:validation-api:2.0.1.Final'
+// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation
+implementation 'org.springframework.boot:spring-boot-starter-validation:2.6.4'
+// https://mvnrepository.com/artifact/io.swagger/swagger-annotations
+implementation group: 'io.swagger', name: 'swagger-annotations', version: '1.6.5'
+// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
+implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.6.4'
+// https://mvnrepository.com/artifact/org.postgresql/postgresql
+implementation group: 'org.postgresql', name: 'postgresql', version: '42.3.3'
+// https://mvnrepository.com/artifact/postgresql/postgresql
+implementation group: 'postgresql', name: 'postgresql', version: '9.1-901-1.jdbc4'
+// https://mvnrepository.com/artifact/org.mockito/mockito-all
+// https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui
+implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.6.6'
+
+}
+
+tasks.named('test') {
+useJUnitPlatform()
+}

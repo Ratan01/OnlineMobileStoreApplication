@@ -1,0 +1,6 @@
+2022-03-13 21:21:49,565 INFO com.cg.oma.controller.CustomerController [http-nio-8081-exec-7] getAllCustomer()Called
+2022-03-13 21:21:49,610 INFO com.cg.oma.controller.CustomerController [http-nio-8081-exec-7] showAllCustomer()Called
+2022-03-13 21:22:57,064 INFO com.cg.oma.controller.CustomerController [http-nio-8081-exec-1] addingCustomer()Called
+2022-03-13 21:22:57,066 INFO com.cg.oma.controller.CustomerController [http-nio-8081-exec-1] addCustomer()Called
+2022-03-13 21:23:37,700 INFO com.cg.oma.controller.CustomerController [http-nio-8081-exec-4] getAllCustomer()Called
+2022-03-13 21:23:37,701 INFO com.cg.oma.controller.CustomerController [http-nio-8081-exec-4] showAllCustomer()Called
